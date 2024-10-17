@@ -204,4 +204,8 @@ footer {
         text-align: center;
         margin: 5px;
     }
+    
+    pre code.hljs {
+        text-wrap: wrap;
+    }
 }
