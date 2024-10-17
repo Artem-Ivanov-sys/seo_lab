@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python arithmetic</title>
+    <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">Logo</div>
+            <nav>
+                <span class="burger">__</span>
+                <ul>
+                    <li><a href="../index.html">Домашня</a></li>
+                    <li><a href="">Про нас</a></li>
+                    <li><a href="">Наші контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="head-links">
+            <a href="page2.html">&#60; Типи даних</a><a href="../index.html">На головну</a><a href="page4.html">Оператор if ></a>
+        </section>
+        <article>
+            <h1>Арифметичні операції в Python</h1>
+            <hr>
+            <p>
+                Python підтримує широкий набір арифметичних операцій для роботи з числами. Ці операції дозволяють виконувати базові математичні дії, такі як додавання, віднімання, множення, ділення та інші.
+            </p>
+            <h2>1. Основні арифметичні операції</h2>
+            <ol>
+                <li>Додавання <span class="mono">+</span> Додає два числа.
+                    <p class="code"><pre><code class="language-python">
+a = 10
+b = 5
+result = a + b  # 15
+print(result)
+                    </code></pre></p>
+                </li>
+                <li>Віднімання <span class="mono">-</span> Віднімає одне число від іншого.
+                    <p class="code"><pre><code class="language-python">
+a = 10
+b = 5
+result = a - b  # 5
+print(result)
+                    </code></pre></p>
+                </li>
+                <li>Множення <span class="mono">*</span> Множить два числа.
+                    <p class="code"><pre><code class="language-python">
+a = 10
+b = 5
+result = a * b  # 50
+print(result)
+                    </code></pre></p>
+                </li>
+                <li>Ділення <span class="mono">/</span> Ділить одне число на інше. Повертає результат з плаваючою точкою.
+                    <p class="code"><pre><code class="language-python">
+a = 10
+b = 3
+result = a / b  # 3.3333333333333335
+print(result)
+                    </code></pre></p>
+                </li>
+                <li>Цілочисельне ділення <span class="mono">//</span> Ділить два числа і повертає цілу частину від ділення.
+                    <p class="code"><pre><code class="language-python">
+a = 10
+b = 3
+result = a // b  # 3
+print(result)
+                    </code></pre></p>
+                </li>
+                <li>Залишок від ділення (Модуль) <span class="mono">%</span> Повертає залишок від ділення двох чисел.
+                    <p class="code"><pre><code class="language-python">
+a = 10
+b = 3
+result = a % b  # 1
+print(result)
+                    </code></pre></p>
+                </li>
+                <li>Піднесення до степеня <span class="mono">**</span> Підносить одне число до степеня іншого.
+                    <p class="code"><pre><code class="language-python">
+a = 2
+b = 3
+result = a ** b  # 8 (2 в степені 3)
+print(result)
+                    </code></pre></p>
+                </li>
+            </ol>
+            <h2>2. Оператори присвоєння з арифметичними операціями</h2>
+            <p>
+                Python підтримує комбіновані оператори, які дозволяють виконувати операції і присвоєння в одному виразі:
+            </p>
+            <p class="code"><pre><code class="language-python">
+x = 10
+x += 5  # Тепер x = 15
+x -= 3  # Тепер x = 12
+x *= 2  # Тепер x = 24
+x /= 4  # Тепер x = 6.0
+print(x)
+            </code></pre></p>
+            <h2>3. Пріоритет операцій</h2>
+            <p>Python виконує арифметичні операції в порядку, визначеному математичними правилами пріоритету. Пріоритет операцій можна змінити за допомогою круглих дужок.</p>
+            <p>Порядок виконання операцій:</p>
+            <ol>
+                <li>Дужки <span class="mono">()</span></li>
+                <li>Піднесення до степеня <span class="mono">**</span></li>
+                <li>Множення, ділення, цілочисельне ділення, залишок від ділення <span class="mono">*, /, //, %</span></li>
+                <li>Додавання і віднімання <span class="mono">+, -</span></li>
+            </ol>
+            <p class="code"><pre><code class="language-python">
+result = 10 + 5 * 2  # Спочатку множення, потім додавання: 10 + (5 * 2) = 20
+print(result)  # 20
+
+# Використання дужок для зміни порядку операцій
+result = (10 + 5) * 2  # Спочатку додавання, потім множення: (10 + 5) * 2 = 30
+print(result)  # 30
+            </code></pre></p>
+        </article>
+    </main>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

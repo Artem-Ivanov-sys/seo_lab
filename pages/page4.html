@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python conditions</title>
+    <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">Logo</div>
+            <nav>
+                <span class="burger">__</span>
+                <ul>
+                    <li><a href="../index.html">Домашня</a></li>
+                    <li><a href="">Про нас</a></li>
+                    <li><a href="">Наші контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="head-links">
+            <a href="page3.html">&#60; Арифметика</a><a href="../index.html">На головну</a><a href="page3.html"></a>
+        </section>
+        <article>
+            <h1>Умовні оператори в Python</h1>
+            <hr>
+            <p>
+                Умовні оператори в Python дозволяють програмі приймати рішення на основі певних умов. Вони дозволяють виконувати різні частини коду залежно від того, чи є умова істинною чи хибною.
+            </p>
+            <h2>1. Основний синтаксис умовних операторів</h2>
+            <p>Python використовує такі умовні оператори для прийняття рішень:</p>
+            <ol>
+                <li><span class="mono">if</span> — основний оператор для перевірки умови.</li>
+                <li><span class="mono">elif</span> — перевіряє додаткові умови, якщо попередня умова була хибною.</li>
+                <li><span class="mono">else</span> — виконує блок коду, якщо всі попередні умови були хибними.</li>
+            </ol>
+            <p class="code"><pre><code class="language-python">
+if умова:
+    # код, який виконується, якщо умова істинна
+elif інша_умова:
+    # код, який виконується, якщо інша умова істинна
+else:
+    # код, який виконується, якщо жодна умова не істинна
+            </code></pre></p>
+            <p>Приклад базового використання <span class="mono">if</span>, <span class="mono">elif</span>, <span class="mono">else</span>:</p>
+            <p class="code"><pre><code class="language-python">
+age = 20
+
+if age &#60; 18:
+    print("Ви неповнолітній.")
+elif age == 18:
+    print("Вам точно 18 років!")
+else:
+    print("Ви дорослий.")
+            </code></pre></p>
+            <p>Результат:</p>
+            <p class="code"><pre><code class="text">
+Ви дорослий.
+                            </code></pre></p>
+            <ol>
+                <li>Якщо змінна age менша за 18, програма виконає блок коду після <span class="mono">if</span>.</li>
+                <li>Якщо змінна дорівнює 18, програма виконає блок після <span class="mono">elif</span>.</li>
+                <li>Якщо жодна з умов не виконана, програма перейде до блоку після <span class="mono">else</span>.</li>
+            </ol>
+            <h2>2. Оператори порівняння та логічні оператори</h2>
+            <p>
+                Python підтримує широкий набір операторів для перевірки умов.
+            </p>
+            <h3>Оператори порівняння:</h3>
+            <ol>
+                <li><span class="mono">==</span> — дорівнює</li>
+                <li><span class="mono">!=</span> — не дорівнює</li>
+                <li><span class="mono">></span> — більше</li>
+                <li><span class="mono">&#60;</span> — менше</li>
+                <li><span class="mono">>=</span> — більше або дорівнює</li>
+                <li><span class="mono">&#60;=</span> — менше або дорівнює</li>
+            </ol>
+            <p class="code"><pre><code class="language-python">
+x = 10
+y = 5
+
+if x > y:
+    print("x більше ніж y")
+else:
+    print("x не більше ніж y")
+            </code></pre></p>
+            <p>Результат:</p>
+            <p class="code"><pre><code class="text">
+x більше ніж y
+            </code></pre></p>
+            <h3>Логічні оператори:</h3>
+            <p>Іноді вам потрібно перевірити кілька умов одночасно. Для цього використовуються логічні оператори:</p>
+            <ol>
+                <li><span class="mono">and</span> — всі умови повинні бути істинними.</li>
+                <li><span class="mono">or</span> — принаймні одна умова повинна бути істинною.</li>
+                <li><span class="mono">not</span> — інвертує істинність умови.</li>
+            </ol>
+            <p>Приклад з <span class="mono">and</span>:</p>
+            <p class="code"><pre><code class="language-python">
+x = 15
+
+if x > 10 and x &#60; 20:
+    print("x знаходиться між 10 і 20")
+            </code></pre></p>
+            <p>Результат:</p>
+            <p class="code"><pre><code class="text">
+x знаходиться між 10 і 20
+            </code></pre></p>
+            <p>Приклад з <span class="mono">or</span>:</p>
+            <p class="code"><pre><code class="language-python">
+age = 17
+has_permission = True
+
+if age >= 18 or has_permission:
+    print("Вхід дозволений.")
+else:
+    print("Вхід заборонено.")
+            </code></pre></p>
+            <p>Результат:</p>
+            <p class="code"><pre><code class="text">
+Вхід дозволений.
+        </article>
+    </main>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

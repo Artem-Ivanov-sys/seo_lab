@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python data types</title>
+    <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">Logo</div>
+            <nav>
+                <span class="burger">__</span>
+                <ul>
+                    <li><a href="../index.html">Домашня</a></li>
+                    <li><a href="">Про нас</a></li>
+                    <li><a href="">Наші контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="head-links">
+            <a href="page1.html">&#60; Змінні</a><a href="../index.html">На головну</a><a href="page3.html">Арифметика ></a>
+        </section>
+        <article>
+            <h1>Типи даних в Python</h1>
+            <hr>
+            <p>
+                Python підтримує різноманітні типи даних, які дозволяють працювати з числами, рядками, списками, словниками та іншими структурами. Пропонуємо розглянемо основні типи даних, їх властивості та приклади використання.
+            </p>
+            <h2>1. Числові типи даних</h2>
+            <p>
+                Python має три основні типи для роботи з числами:
+                <ul>
+                    <li><span class="mono">int</span>: Цілі числа (наприклад, 1, -5, 100).</li>
+                    <li><span class="mono">float</span>: Числа з плаваючою точкою (наприклад, 3.14, -0.001).</li>
+                    <li><span class="mono">complex</span>: Комплексні числа (наприклад, 1+2j).</li>
+                </ul>
+            </p>
+            <p class="code"><pre><code class="language-python">
+# Ціле число
+x = 10
+print(type(x))  # &#60;class 'int'>
+
+# Число з плаваючою точкою
+y = 3.14
+print(type(y))  # &#60;class 'float'>
+
+# Комплексне число
+z = 1 + 2j
+print(type(z))  # &#60;class 'complex'>
+            </code></pre></p>
+            <h2>2. Рядки</h2>
+            <p>
+                Рядки в Python — це послідовності символів. Їх можна створювати за допомогою одинарних або подвійних лапок.
+            </p>
+            <p class="code"><pre><code class="language-python">
+# Рядок із одинарними лапками
+s1 = 'Привіт, світ!'
+print(s1)
+
+# Рядок із подвійними лапками
+s2 = "Python — чудова мова"
+print(s2)
+
+# Багаторядковий рядок
+s3 = '''Це
+багаторядковий
+рядок.'''
+print(s3)
+            </code></pre></p>
+            <h2>3. Логічний тип</h2>
+            <p>Тип bool представляє логічні значення: <span class="mono">True</span> або <span class="mono">False</span>. Логічні операції використовуються для умовних конструкцій та циклів.</p>
+            <p class="code"><pre><code class="language-python">
+# Логічне значення True
+is_active = True
+print(is_active)  # True
+
+# Логічні операції
+print(5 > 3)  # True
+print(10 == 10)  # True
+print(7 &#60; 3)  # False
+            </code></pre></p>
+            <h2>4. Списки</h2>
+            <p>Списки — це впорядковані змінні колекції елементів, які можуть містити об'єкти будь-яких типів. Вони визначаються за допомогою квадратних дужок.</p>
+            <p class="code"><pre><code class="language-python">
+# Створення списку
+my_list = [1, 2, 3, 'apple', 3.14]
+print(my_list)  # [1, 2, 3, 'apple', 3.14]
+
+# Доступ до елементів списку
+print(my_list[0])  # 1
+
+# Зміна елемента
+my_list[3] = 'banana'
+print(my_list)  # [1, 2, 3, 'banana', 3.14]
+
+# Додавання елемента
+my_list.append('new item')
+print(my_list)  # [1, 2, 3, 'banana', 3.14, 'new item']
+            </code></pre></p>
+            <h2>5. Словники</h2>
+            <p>Словники — це невпорядковані колекції пар ключ-значення. Вони дозволяють зберігати дані, асоційовані з певними ключами. Словники визначаються за допомогою фігурних дужок.</p>
+            <p class="code"><pre><code class="language-python">
+# Створення словника
+my_dict = {'name': 'John', 'age': 25, 'city': 'Kyiv'}
+print(my_dict)  # {'name': 'John', 'age': 25, 'city': 'Kyiv'}
+
+# Доступ до значення за ключем
+print(my_dict['name'])  # John
+
+# Додавання нового ключа
+my_dict['job'] = 'developer'
+print(my_dict)  # {'name': 'John', 'age': 25, 'city': 'Kyiv', 'job': 'developer'}
+            </code></pre></p>
+            <h2>6. None</h2>
+            <p><span class="mono">None</span> — це спеціальний тип даних, який означає відсутність значення. Він часто використовується як початкове значення для змінних або як повертаєме значення функцій, які не мають результату.</p>
+            <p class="code"><pre><code class="language-python">
+# Змінна з None
+x = None
+print(x)  # None
+
+# Функція, яка нічого не повертає, повертає None
+def my_func():
+    pass
+
+print(my_func())  # None
+            </code></pre></p>
+        </article>
+    </main>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>

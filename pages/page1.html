@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python variables</title>
+    <link rel="stylesheet" href="../styles/master.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai-sublime.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">Logo</div>
+            <nav>
+                <span class="burger">__</span>
+                <ul>
+                    <li><a href="../index.html">Домашня</a></li>
+                    <li><a href="">Про нас</a></li>
+                    <li><a href="">Наші контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="head-links">
+            <a href=""></a><a href="../index.html">На головну</a><a href="page2.html">Типи даних ></a>
+        </section>
+        <article>
+            <h1>Змінні в Python</h1>
+            <hr>
+            <p>
+                Змінні — це фундаментальні компоненти будь-якої мови програмування, зокрема і Python. Змінна — це контейнер для зберігання даних, які можуть змінюватися під час виконання програми. У Python, оголошення змінної не вимагає вказівки типу даних, оскільки Python автоматично визначає тип змінної під час її ініціалізації.
+            </p>
+            <h2>1. Оголошення змінних</h2>
+            <p>
+                У Python змінна створюється під час першого присвоєння їй значення:
+            </p>
+            <p class="code"><pre><code class="language-python">
+x = 10      # Змінна x отримала значення 10
+name = "Alex"  # Змінна name отримала рядкове значення
+            </code></pre></p>
+            <p>
+                У цьому прикладі змінна <span class="mono">x</span> є цілим числом, а змінна <span class="mono">name</span> — рядком. Python автоматично визначає тип змінної на основі присвоєного значення.
+            </p>
+            <h2>2. Правила іменування</h2>
+            <p>
+                Python має кілька простих правил, яких потрібно дотримуватися під час іменування змінних:
+                <ul>
+                    <li>Ім'я змінної повинно починатися з літери (a-z, A-Z) або символу підкреслення (_).</li>
+                    <li>Ім'я не може починатися з цифри.</li>
+                    <li>Ім'я змінної може містити лише букви, цифри і символ підкреслення.</li>
+                    <li>Python є чутливим до регістру, тому змінні <span class="mono">Name</span> і <span class="mono">name</span> — це різні змінні.</li>
+                </ul>
+            </p>
+            <p class="code"><pre><code class="language-python">
+my_var = 5      # правильне ім'я
+_my_var = 10    # також правильне ім'я
+myVar2 = "test" # допустимо
+
+2my_var = 10    # неправильне ім'я, починається з цифри
+my-var = 10     # неправильне ім'я, містить дефіс
+            </code></pre></p>
+            <h2>3. Виведення змінних</h2>
+            <p>У Python змінні можна вивести за допомогою оператора <span class="mono">print()</span>.</p>
+            <p class="code"><pre><code class="language-python">
+my_var = 5      # створюємо змінну
+print(my_var)   # виведе 5
+            </code></pre></p>
+            <h2>4. Множинне присвоєння</h2>
+            <p>У Python можна присвоїти кілька значень кільком змінним одночасно.</p>
+            <p class="code"><pre><code class="language-python">
+a, b, c = 1, 2, 3
+            </code></pre></p>
+        </article>
+    </main>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+</html>
