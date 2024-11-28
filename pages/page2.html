@@ -24,9 +24,9 @@
     </header>
     <main>
         <section class="head-links">
-            <a href="page1.html">&#60; Змінні</a><a href="../index.html">На головну</a><a href="page3.html">Арифметика ></a>
+            <a href="page1.html">&#60; Змінні</a><a href="main.html">На головну</a><a href="page3.html">Арифметика ></a>
         </section>
-        <article>
+        <article class="content">
             <h1>Типи даних в Python</h1>
             <hr>
             <p>
@@ -131,6 +131,19 @@ def my_func():
 print(my_func())  # None
             </code></pre></p>
         </article>
+        <article class="comments">
+            <hr>
+            <h2>Коментарі</h2>
+            <form action="javascript:addComment()">
+                <p>Опублікувати коментар:</p>
+                <input type="text" placeholder="Email" id="email" required>
+                <textarea name="textcomment" id="" placeholder="Коментар" required></textarea>
+                <input type="submit" value="Опублікувати">
+            </form>
+            <ol class="comments-list">
+
+            </ol>
+        </article>
     </main>
     <footer>
         <section class="about">
@@ -155,5 +168,6 @@ print(my_func())  # None
     <script>
         hljs.highlightAll();
     </script>
+    <script src="../js/comments.js"></script>
 </body>
 </html>

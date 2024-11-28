@@ -24,9 +24,9 @@
     </header>
     <main>
         <section class="head-links">
-            <a href=""></a><a href="../index.html">На головну</a><a href="page2.html">Типи даних ></a>
+            <a href=""></a><a href="main.html">На головну</a><a href="page2.html">Типи даних ></a>
         </section>
-        <article>
+        <article class="content">
             <h1>Змінні в Python</h1>
             <hr>
             <p>
@@ -73,6 +73,19 @@ print(my_var)   # виведе 5
 a, b, c = 1, 2, 3
             </code></pre></p>
         </article>
+        <article class="comments">
+            <hr>
+            <h2>Коментарі</h2>
+            <form action="javascript:addComment()">
+                <p>Опублікувати коментар:</p>
+                <input type="text" placeholder="Email" id="email" required>
+                <textarea name="textcomment" id="" placeholder="Коментар" required></textarea>
+                <input type="submit" value="Опублікувати">
+            </form>
+            <ol class="comments-list">
+
+            </ol>
+        </article>
     </main>
     <footer>
         <section class="about">
@@ -94,6 +107,7 @@ a, b, c = 1, 2, 3
             <div class="logo">Logo</div>
         </section>
     </footer>
+    <script src="../js/comments.js"></script>
     <script>
         hljs.highlightAll();
     </script>

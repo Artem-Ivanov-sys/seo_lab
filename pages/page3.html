@@ -24,9 +24,9 @@
     </header>
     <main>
         <section class="head-links">
-            <a href="page2.html">&#60; Типи даних</a><a href="../index.html">На головну</a><a href="page4.html">Оператор if ></a>
+            <a href="page2.html">&#60; Типи даних</a><a href="main.html">На головну</a><a href="page4.html">Оператор if ></a>
         </section>
-        <article>
+        <article class="content">
             <h1>Арифметичні операції в Python</h1>
             <hr>
             <p>
@@ -121,6 +121,19 @@ result = (10 + 5) * 2  # Спочатку додавання, потім мно�
 print(result)  # 30
             </code></pre></p>
         </article>
+        <article class="comments">
+            <hr>
+            <h2>Коментарі</h2>
+            <form action="javascript:addComment()">
+                <p>Опублікувати коментар:</p>
+                <input type="text" placeholder="Email" id="email" required>
+                <textarea name="textcomment" id="" placeholder="Коментар" required></textarea>
+                <input type="submit" value="Опублікувати">
+            </form>
+            <ol class="comments-list">
+
+            </ol>
+        </article>
     </main>
     <footer>
         <section class="about">
@@ -145,5 +158,6 @@ print(result)  # 30
     <script>
         hljs.highlightAll();
     </script>
+    <script src="../js/comments.js"></script>
 </body>
 </html>
