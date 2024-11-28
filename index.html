@@ -21,9 +21,18 @@
         </div>
     </header>
     <main>
-        (в розробці)
-        <a href="./pages/main.html">Головна сторінка</a>
+        <section class="carousel">
+            <section class="images">
+                <div class="elem" id="elem1">Вивчай Python</div>
+                <div class="elem" id="elem2">Використовуй<br>Python</div>
+                <div class="elem" id="elem3">Розробляй<br>нові рішення</div>
+            </section>
+            <input type="button" value="<" id="toleft" onclick="toLeft()">
+            <input type="button" value=">" id="toright" onclick="toRight()">
+        </section>
+        <a href="./pages/main.html" id="courses">Почати вивчати Python</a>
     </main>
+    <script src="./js/carousel.js"></script>
     <footer>
         <section class="about">
             <h2>Про нас</h2>
